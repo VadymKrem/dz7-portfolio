@@ -553,11 +553,7 @@ body {
 /* styles for portfolio */
 /* filters buttons */
 .section-main {
-  padding-top: 96px;
-}
-.container-portfolio {
-  padding-left: 0;
-  padding-right: 0;
+  padding-top: 48px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -588,9 +584,9 @@ body {
 .filters-list {
   list-style-type: none;
   display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 16px 24px;
 }
 
 /* list cards */
@@ -598,9 +594,11 @@ body {
   display: flex;
   gap: 48px 24px;
   flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 .card-item {
   list-style-type: none;
+  width: 100%;
 
   transition: transform var(--hover-transition);
 }
@@ -659,6 +657,11 @@ body {
   border: 1px solid var(--color-btn);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+@media screen and (max-width: 767px) {
+  .filter-btn {
+    padding: 8px 16px;
+  }
 }
 /* Backdrop */
 .backdrop {
